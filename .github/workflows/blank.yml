@@ -61,4 +61,4 @@ jobs:
         git add deployment.yaml
         git status
         git commit -m "deployment.yaml update"
-        git push origin master
+        git push origin main
