@@ -52,7 +52,7 @@ jobs:
     - name: Local Deployment
       run: |
         version_date=app.${{ steps.current-time.outputs.formattedTime }}
-        git clone https://${{ secrets.NAME }}:${{ secrets.REGISTRY_TOKEN }}@github.com/wade-srchae/argocd-manifest.git
+        git clone https://${{ secrets.REGISTRY_TOKEN }}@github.com/wade-srchae/argocd-manifest.git
         cd /home/runner/work
         ls
 
