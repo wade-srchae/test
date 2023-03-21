@@ -54,7 +54,7 @@ jobs:
           version_date=${{ steps.current-time.outputs.formattedTime }}
           git clone https://${{ secrets.NAME }}:${{ secrets.REGISTRY_TOKEN }}@github.com/wade-srchae/argocd-manifest.git
           cd /home/runner/work/test/test/argocd-manifest/
-          sed -i "s/app:*/app:$version_date/g" /home/runner/work/test/test/argocd-manifest/deployment.yaml
+          sed -i "s/app:dev.*/app:dev.$version_date/g" /home/runner/work/test/test/argocd-manifest/deployment.yaml
           git config --global user.email ${{ secrets.EMAIL }}
           git config --global user.name ${{ secrets.NAME }}
           git status
