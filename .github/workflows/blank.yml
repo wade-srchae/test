@@ -48,7 +48,6 @@ jobs:
     #     tags: ghcr.io/${{ github.repository_owner }}/app:${{ steps.current-time.outputs.formattedTime }}
 
 
-
     - name: Local Deployment
       run: |
         version_date=app.${{ steps.current-time.outputs.formattedTime }}
