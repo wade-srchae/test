@@ -45,6 +45,7 @@ jobs:
         uses: docker/build-push-action@v2 # build-push-action 사용
         with:
           push: true
+          platforms: linux/amd64, linux/arm64
           tags: ghcr.io/${{ github.repository_owner }}/app:dev.${{ steps.current-time.outputs.formattedTime }}
 
       - name: Local Deployment
