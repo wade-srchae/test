@@ -47,7 +47,6 @@ jobs:
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/app:dev.${{ steps.current-time.outputs.formattedTime }}
 
-
       - name: Local Deployment
         run: |
           version_date=${{ steps.current-time.outputs.formattedTime }}
